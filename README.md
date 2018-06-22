@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TODO (if I were to TODO): Add clear functionality--either at submit or via a separate button.
 
-Things you may want to cover:
+I considered doing a migration and making this a db-storing app, but that seemed like more
+than one might want in a calculator.
 
-* Ruby version
+## Instructions
 
-* System dependencies
+Please create a rails app in any rails/ruby version.  Don't spend more then 2 hours (really).
+Submit either by commit to github, bitbucket, or zipping up your git repo and emailing it to [redacted].
 
-* Configuration
 
-* Database creation
+Create a rails app that has one root page that is a calculator.
 
-* Database initialization
+It implements these operators (say +, -, /,*) on any number of integer arguments.
+The page has only a text box and a submit button.
+The requested operation and its result should be displayed below the text box after clicking the calculate button. Please avoid using a gem for the calculation portion of the assignment and craft your own calculator mechanism (hint eval is not your friend).
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+We don't care about UI/UX.
+Please write up any tests you think might be important.
 
-* Deployment instructions
+Input example:
+5*3+1+6/2+9*100
 
-* ...
+Expected output:
+5*3+1+6/2+9*100
+919
+
+Input example:
+5*3+1+6/85+9*100
+
+Expected output:
+5*3+1+6/85+9*100
+916.07

@@ -1,0 +1,10 @@
+<h1>The Best Calculator Ever</h1>
+
+<%= form_for :calculator, url: { action: :compute }, method: :get do |form| %>
+	<%= text_field_tag(:calculation, params[:calculation]) %>
+	<%= form.submit('Calculate') %>
+<% end %>
+
+<% unless @result.nil? %>
+  <h2> Result = <%= @result %> </h2>
+<% end %> 0
