@@ -24,8 +24,8 @@ class CalculatorTest < ActiveSupport::TestCase
 
   def test_should_return_accurate_order_precedence
     result1 = Calculator.calculate('5*3+1+6/2+9*100')
-    result2 = Calculator.calculate('5*3+1+6/85+9*100')
+    result2 = Calculator.calculate('5*3+1+6/85+9*100/4')
     assert_equal('919.00', result1)
-    assert_equal('916.07', result2)
+    assert_equal('241.07', result2)
   end
 end
